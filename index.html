@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Welcome to the Multiple Choice Quiz</h1>
+    <form id="start-container">
+      <label for="time-limit">Time limit (in seconds):</label>
+      <input type="number" id="time-limit" name="time-limit" value="600" min="10" max="6000000" required>
+      <label for="hours">Hours:</label>
+      <input type="number" id="hours" name="hours" min="0" max="24" value="00" required>
+      <label for="minutes">Minutes:</label>
+      <input type="number" id="minutes" name="minutes" min="0" max="59" value="00" required>
+      <label for="seconds">Seconds:</label>
+      <input type="number" id="seconds" name="seconds" min="0" max="59" value="00" required>
+      <br>
+      <label for="num-questions">Number of questions:</label>
+      <input type="number" id="num-questions" name="num-questions" value="10" min="1" max="3000" required>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </form>
+  </div>
+  <div id="timer-container" class="container" style="display: none;">Time left: <span id="timer"></span></div>
+  <div id="quiz-container" class="container" style="display: none;">
+    <h2 id="question"></h2>
+    <div id="choices"></div>
+    <button id="submit-btn">Submit</button>
+  </div>
+  <div id="result-container" class="container" style="display: none;"></div>
+
+  <script src="quiz.js"></script>
+</body>
+
+</html>

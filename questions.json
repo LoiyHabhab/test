@@ -1,0 +1,22 @@
+[
+    {
+        "question": "<p>A 47-year-old woman comes to the office due to fever, dysuria, and abdominal pain.&nbsp; The patient has had several urinary tract infections since her teens but has no other medical concerns.&nbsp; Physical examination shows mild suprapubic discomfort.&nbsp; Urinalysis demonstrates pyuria and many bacteria.&nbsp; CT scan of the abdomen is shown in the image below:</p><p><span style='text-align: center !important; display: block !important;' ymp_custom_link_type='image-lightbox-1-image-full' img_link='https://usmleway.com/wp-content/uploads/umedia/U442.png' ymp_description=''><img  draggable=\"false\" id=\"227\" src=\"https://usmleway.com/wp-content/uploads/umedia/U442.png\" img_link=\"https://usmleway.com/wp-content/uploads/umedia/\"  ></span></p><p>Which of the following structures has most likely limited the proper ascent of the anomalous organ seen on CT scan?</p>",
+        "choices": [
+            "Inferior mesenteric artery",
+            "Inferior vena cava",
+            "Persistent urachus",
+            "Superior mesenteric artery"
+        ],
+        "answer": "Inferior mesenteric artery"
+    },
+    {
+        "question": "What is the tallest mountain in the world?",
+        "choices": [
+            "K2",
+            "Everest",
+            "Denali",
+            "Kilimanjaro"
+        ],
+        "answer": "Everest"
+    }
+]

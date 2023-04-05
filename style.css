@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  /* max-width: 800px; */
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+label {
+  margin-right: 0.5rem;
+}
+
+input {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+#start-container {
+  /* max-width: 800px; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  /* padding: 1rem; */
+  box-sizing: border-box;
+}
+
+#quiz-container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+#quiz-container h2 {
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+}
+
+.choice {
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.choice:hover .circle {
+  border-color: #007bff;
+}
+
+.circle {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.circle:hover {
+  border-color: #007bff;
+}
+
+.circle.selected {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.choice-text {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#quiz-container span {
+  font-size: 1.1rem;
+}
+
+#quiz-container .question {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+#timer-container {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#quiz-container .submit-btn {
+  margin-top: 2rem;
+}
+
+#result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+#result-container h2 {
+  margin: 0;
+  text-align: center;
+}
+
+#result-container p {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#result-container button {
+  margin-top: 2rem;
+}
+
