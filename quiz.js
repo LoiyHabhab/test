@@ -28,6 +28,7 @@ function startQuiz() {
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4 && xhr.status === 200) {
       questions = JSON.parse(xhr.responseText);
+      questions = questions.sort(() => .5 - Math.random()).slice(0,settings.numQuestions)
       startTimer();
       showQuestion();
       showQuiz();
@@ -143,7 +144,9 @@ document.getElementById("submit-btn").addEventListener("click", function() {
 function endQuiz() {
   clearInterval(timer);
   const quizElem = document.getElementById("quiz-container");
+  const timerElem = document.getElementById("timer-container");
   quizElem.style.display = "none";
+  timerElem.style.display = "none";
   const resultElem = document.getElementById("result-container");
   resultElem.textContent = `You scored ${score} out of ${settings.numQuestions}`;
   resultElem.style.display = "block";
